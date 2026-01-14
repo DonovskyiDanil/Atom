@@ -1,0 +1,61 @@
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 100px 0;
+}
+
+.badge {
+  background: #eef4ff;
+  color: #377dff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mainTitle {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 24px 0;
+  color: #1e266d;
+}
+
+.subText {
+  font-size: 18px;
+  color: #6a70a0;
+  line-height: 1.6;
+}
+
+.videoCard {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: linear-gradient(135deg, #4f6bff 0%, #7932ff 100%);
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 30px 60px rgba(55, 125, 255, 0.2);
+}
+
+.playButton {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.playIcon {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #ff5a5f;
+  margin-left: 5px;
+}

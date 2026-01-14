@@ -1,0 +1,28 @@
+.megaMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  padding: 24px;
+  min-width: 380px;
+  z-index: 100;
+}
+
+.grid { display: flex; flex-direction: column; gap: 20px; }
+
+.item { display: flex; gap: 16px; cursor: pointer; }
+
+.icon { 
+  background: #f1f5ff; 
+  padding: 10px; 
+  border-radius: 8px; 
+  font-size: 20px;
+}
+
+.content h4 { margin: 0; font-size: 15px; color: #1e1e1e; }
+.content p { margin: 4px 0 0; font-size: 13px; color: #666; }
+.arrow { color: #377dff; transition: 0.2s; }
+.item:hover .arrow { transform: translateX(3px); }
