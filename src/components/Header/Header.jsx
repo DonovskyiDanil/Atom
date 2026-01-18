@@ -1,39 +1,48 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
-import MegaMenu from '../MegaMenu/MegaMenu';
-import { aiNamingMenu } from '../data/menus/aiNaming.menu';
+import logoImg from '../../assets/logo.png';
+import DomainsMenu from '../MegaMenu/DomainsMenu';
+import AiNamingMenu from '../MegaMenu/AiNamingMenu';
+import ToolsMenu from '../MegaMenu/ToolsMenu';
+import ServicesMenu from '../MegaMenu/ServicesMenu';
+import WhyAtomMenu from '../MegaMenu/WhyAtomMenu';
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 
+  const navLinks = [
+    { id: 'domains', label: 'Domains', component: <DomainsMenu /> },
+    { id: 'ai', label: 'AI Naming', component: <AiNamingMenu /> },
+    { id: 'tools', label: 'Tools', component: <ToolsMenu /> },
+    { id: 'services', label: 'Services', component: <ServicesMenu /> },
+    { id: 'why', label: 'Why Atom', component: <WhyAtomMenu /> },
+  ];
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.logoGroup}>
-          <div className={styles.logoIcon}>✦</div>
-          <span className={styles.logoText}>atom</span>
-        </div>
-        
+        <a href="/" className={styles.logoGroup}>
+          <img src={logoImg} alt="Atom.com" className={styles.logo} />
+        </a>
+
         <nav className={styles.nav}>
-          <div className={styles.navItem}>Domains</div>
-          <div 
-            className={styles.navItem} 
-            onMouseEnter={() => setActiveMenu('ai')}
-            onMouseLeave={() => setActiveMenu(null)}
-          >
-            AI Naming
-            {activeMenu === 'ai' && <MegaMenu items={aiNamingMenu} />}
-          </div>
-          <div className={styles.navItem}>Tools</div>
-          <div className={styles.navItem}>Services</div>
-          <div className={styles.navItem}>Why Atom</div>
+          {navLinks.map(link => (
+            <div
+              key={link.id}
+              className={`${styles.navItem} ${activeMenu === link.id ? styles.active : ''}`}
+              onMouseEnter={() => setActiveMenu(link.id)}
+              onMouseLeave={() => setActiveMenu(null)}
+            >
+              <span className={styles.label}>{link.label}</span>
+              {activeMenu === link.id && (
+                <div className={styles.menuDropdown}>{link.component}</div>
+              )}
+            </div>
+          ))}
         </nav>
 
         <div className={styles.actions}>
-          <span className={styles.icon}>🔍</span>
-          <span className={styles.icon}>👤</span>
-          <span className={styles.icon}>📞</span>
-          <span className={styles.icon}>❤️</span>
+          <span>🔍</span><span>👤</span><span>📞</span><span>❤️</span>
         </div>
       </div>
     </header>

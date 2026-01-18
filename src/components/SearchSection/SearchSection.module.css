@@ -11,10 +11,8 @@
   text-align: center;
 }
 
-/* 1. ГРАДИЕНТНАЯ РАМКА (ФИОЛЕТОВЫЙ -> СИНИЙ) */
 .searchWrapper {
-  padding: 1.5px; /* Очень тонкая линия */
-  /* Точные цвета с твоего фото: сиреневый переходит в насыщенный голубой */
+  padding: 1.5px; 
   background: linear-gradient(90deg, #b892ff 0%, #377dff 100%);
   border-radius: 100px;
   margin-bottom: 25px;
@@ -37,7 +35,6 @@
   color: #1e266d;
 }
 
-/* 2. ОРАНЖЕВАЯ КНОПКА */
 .orangeBtn {
   background-color: #ff6e4e;
   border: none;
@@ -50,7 +47,6 @@
   cursor: pointer;
 }
 
-/* 3. КНОПКИ-ТЕГИ (ИСПРАВЛЕННЫЙ HOVER) */
 .tagsRow {
   display: flex;
   justify-content: center;
@@ -59,9 +55,9 @@
 }
 
 .tagBtn {
-  background-color: #f1f3ff; /* Стартовый бледный фон */
-  color: #3d4bb4;            /* Синий текст */
-  border: 1px solid transparent; /* Резерв под рамку */
+  background-color: #f1f3ff; 
+  color: #3d4bb4;          
+  border: 1px solid transparent; 
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 14px;
@@ -70,7 +66,7 @@
   transition: all 0.2s ease;
 }
 
-/* При наведении — БЕЛЫЙ фон и СИНЯЯ рамка */
+
 .tagBtn:hover {
   background-color: #ffffff; 
   color: #377dff;

@@ -15,18 +15,18 @@ yarn-error.log*
 logs/
 *.log
 
-# Переменные окружения (СЕКРЕТЫ - никогда не пушим!)
+
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Системные файлы
+
 .DS_Store
 Thumbs.db
 
-# Настройки редакторов
+
 .vscode/
 .idea/
 *.sublime-project

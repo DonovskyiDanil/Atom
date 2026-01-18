@@ -50,14 +50,13 @@
   background: #ffffff;
   padding: 50px 30px;
   border-radius: 15px;
-  border: 1px solid #f0f2f5; /* Статичная рамка */
+  border: 1px solid #f0f2f5; 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-/* Убраны все стили :hover для .card */
 
 .icon {
   font-size: 48px;
@@ -92,7 +91,7 @@
   border: none;
 }
 
-/* Убраны эффекты наведения для кнопки и стрелки */
+
 .arrow {
   display: inline-block;
   font-size: 18px;

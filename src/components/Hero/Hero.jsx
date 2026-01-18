@@ -18,7 +18,6 @@ const Hero = () => {
           <div className={styles.playButton}>
             <div className={styles.playIcon}></div>
           </div>
-          {/* Визуальные элементы плеера как на фото */}
           <div className={styles.videoUi}>
             <div className={styles.progressBar}></div>
             <div className={styles.time}>02:05</div>

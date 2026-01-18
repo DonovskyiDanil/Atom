@@ -2,12 +2,11 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaRegSmile } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import { MdAccessibilityNew } from 'react-icons/md'; // Иконка человека
+import { MdAccessibilityNew } from 'react-icons/md'; 
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      {/* ПЛАВАЮЩИЕ ИКОНКИ */}
       <div className={styles.stickyLeft}>
         <div className={styles.accessibilityCircle}>
           <MdAccessibilityNew />
@@ -23,8 +22,7 @@ const Footer = () => {
       <div className={styles.topDivider}></div>
       <div className={styles.container}>
         <div className={styles.grid}>
-          
-          {/* Column 1 */}
+
           <div className={styles.column}>
             <h4 className={styles.heading}>Domain Services</h4>
             <ul className={styles.linkList}>
@@ -34,7 +32,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 2 */}
           <div className={styles.column}>
             <h4 className={styles.heading}>Domain Tools</h4>
             <ul className={styles.linkList}>
@@ -52,7 +49,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 3 */}
           <div className={styles.column}>
             <h4 className={styles.heading}>Naming & Branding</h4>
             <ul className={styles.linkList}>
@@ -78,7 +74,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 4 */}
           <div className={styles.column}>
             <h4 className={styles.heading}>Atom</h4>
             <ul className={styles.linkList}>
@@ -102,7 +97,6 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            {/* LEGAL BLOCK */}
             <div className={`${styles.subBlock} ${styles.legalBlock}`}>
               <h4 className={styles.heading}>Legal</h4>
               <ul className={styles.linkList}>
@@ -114,9 +108,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* НИЖНЯЯ ЛИНИЯ */}
         <div className={styles.bottomLine}></div>
-        
         <div className={styles.footerBottom}>
           <div className={styles.copyBlock}>
             <span>Copyright © 2025 Atom.com</span>

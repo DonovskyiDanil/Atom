@@ -1,0 +1,109 @@
+.wrapper {
+  position: absolute !important;
+  top: 0 !important;
+  left: 200px !important; 
+  width: 980px !important; /* Широкое меню для 3-х колонок */
+  background: #ffffff !important;
+  display: grid !important;
+  grid-template-columns: 1.1fr 0.9fr 1fr !important; /* Три столба */
+  border-radius: 12px !important;
+  border: 1.5px solid #eef0f2 !important;
+  border-top: none !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+  z-index: 999999 !important;
+  overflow: hidden !important;
+  cursor: default !important;
+}
+
+/* Колонки */
+.cardsCol { padding: 30px !important; border-right: 1.5px solid #f1f3f5 !important; }
+.linksCol { padding: 30px !important; border-right: 1.5px solid #f1f3f5 !important; }
+.promoCol { 
+  padding: 30px !important; 
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0eaff 100%) !important; 
+}
+
+/* Стили карточек (как в Tools/Services) */
+.item {
+  display: flex !important;
+  gap: 15px !important;
+  margin-bottom: 25px !important;
+  align-items: flex-start !important;
+  cursor: default !important;
+}
+
+.iconContainer {
+  width: 50px !important;
+  height: 50px !important;
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+  transition: transform 0.3s ease !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+}
+
+.item:hover .iconContainer { transform: rotate(10deg) !important; }
+
+.info h4 { 
+  color: #1e266d !important; 
+  font-size: 17px !important; 
+  font-weight: 700 !important; 
+  margin: 0 !important; 
+  cursor: pointer !important;
+}
+
+.info p { 
+  color: #77838f !important; 
+  font-size: 13px !important; 
+  line-height: 1.4 !important; 
+  margin-top: 4px !important;
+  cursor: pointer !important;
+}
+
+/* Средняя колонка: Ссылки */
+.columnTitle {
+  color: #222 !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  margin-bottom: 15px !important;
+}
+
+.linkItem {
+  color: #4e5d78 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.linkItem:hover { color: #377dff !important; }
+
+/* Бейджи */
+.badge { background: #e0e7ff !important; color: #377dff !important; font-size: 10px !important; padding: 2px 8px !important; border-radius: 10px !important; }
+.badgeBlue { background: #377dff !important; color: #fff !important; font-size: 10px !important; padding: 2px 8px !important; border-radius: 10px !important; }
+
+/* Правая колонка: Промо */
+.promoImage img {
+  width: 100% !important;
+  border-radius: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.promoContent h4 { color: #1e266d !important; font-size: 18px !important; font-weight: 800 !important; cursor: pointer !important; }
+.promoContent p { color: #4e5d78 !important; font-size: 14px !important; margin-top: 8px !important; cursor: pointer !important; }
+
+/* Общая анимация стрелок */
+.chevron {
+  display: inline-block !important;
+  margin-left: 5px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.item:hover .chevron { transform: translateX(4px) !important; }

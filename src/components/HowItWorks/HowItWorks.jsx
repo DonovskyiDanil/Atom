@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './HowItWorks.module.css';
-// 1. Импортируем само изображение
 import mainIconImg from '../../assets/how-it-works/How-it-icons.svg'; 
 
 const HowItWorks = () => {
@@ -31,7 +30,6 @@ const HowItWorks = () => {
     <section className={styles.howSection}>
       <div className={styles.container}>
         <div className={styles.header}>
-          {/* 2. Заменяем эмодзи на тег img */}
           <div className={styles.mainIconWrapper}>
             <img src={mainIconImg} alt="How it works icon" className={styles.mainIcon} />
           </div>

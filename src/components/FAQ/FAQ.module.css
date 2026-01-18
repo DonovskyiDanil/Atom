@@ -12,7 +12,6 @@
   font-weight: 700;
 }
 
-/* Табы (Оранжевый только тут, как на фото 23.49.28) */
 .navWrapper {
   display: flex;
   justify-content: center;
@@ -38,11 +37,10 @@
 }
 
 .activeTabBtn {
-  background-color: #ff6e4e; /* Оранжевый фон только для активной кнопки сверху */
+  background-color: #ff6e4e; 
   color: #ffffff;
 }
 
-/* КАРТОЧКА ВОПРОСА (Белая, как на фото 23.53.16) */
 .accordionItem {
   background-color: #ffffff;
   border: 1px solid #f0f2f5;
@@ -53,16 +51,16 @@
   transition: all 0.2s ease;
 }
 
-/* ХОВЕР (Как на фото 23.53.06): Синяя рамка и светло-голубой фон */
+
 .accordionItem:hover:not(.activeItem) {
   border-color: #377dff;
-  background-color: #f8faff; /* Тот самый легкий голубой оттенок */
+  background-color: #f8faff; 
 }
 
-/* СТРОКА ВОПРОСА */
+
 .questionRow {
   display: flex;
-  justify-content: space-between; /* Текст слева, плюс справа */
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -79,7 +77,7 @@
   margin-left: 20px;
 }
 
-/* ОТКРЫТОЕ СОСТОЯНИЕ (Ярко-синий, как на фото 23.45.11) */
+
 .activeItem {
   background-color: #377dff;
   border-color: #377dff;
@@ -88,7 +86,7 @@
 .activeItem .questionText,
 .activeItem .icon,
 .activeItem .answer {
-  color: #ffffff; /* Все белое внутри синей плашки */
+  color: #ffffff; 
 }
 
 .answer {
