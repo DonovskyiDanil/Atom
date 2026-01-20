@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import logoImg from '../../assets/logo.png';
+import searchIcon from '../../assets/icon/search.png';
+import userIcon from '../../assets/icon/user.png';
+import phoneIcon from '../../assets/icon/phone.jpg';
+import heartIcon from '../../assets/icon/icon-heart.svg';
+import chatIcon from '../../assets/icon/icon-chat-black.svg';
+import emailIcon from '../../assets/icon/icon-email.svg';
+import helpIcon from '../../assets/icon/icon-help.svg';
 import DomainsMenu from '../MegaMenu/DomainsMenu';
 import AiNamingMenu from '../MegaMenu/AiNamingMenu';
 import ToolsMenu from '../MegaMenu/ToolsMenu';
@@ -42,7 +49,56 @@ const Header = () => {
         </nav>
 
         <div className={styles.actions}>
-          <span>🔍</span><span>👤</span><span>📞</span><span>❤️</span>
+          <div className={styles.actionIcon}>
+            <img src={searchIcon} alt="Search" />
+          </div>
+          
+          <div 
+            className={styles.actionWrapper}
+            onMouseEnter={() => setActiveMenu('profile')}
+            onMouseLeave={() => setActiveMenu(null)}
+          >
+            <div className={styles.actionIcon}>
+              <img src={userIcon} alt="User" />
+            </div>
+            {activeMenu === 'profile' && (
+              <div className={styles.smallDropdown}>
+                <div className={styles.dropItem}><img src={userIcon} className={styles.tinyIcon} /> Login</div>
+                <div className={styles.dropItem}><img src={userIcon} className={styles.tinyIcon} /> Signup</div>
+              </div>
+            )}
+          </div>
+
+          <div 
+            className={styles.actionWrapper}
+            onMouseEnter={() => setActiveMenu('phone')}
+            onMouseLeave={() => setActiveMenu(null)}
+          >
+            <div className={styles.actionIcon}>
+              <img src={phoneIcon} alt="Phone" />
+            </div>
+            {activeMenu === 'phone' && (
+              <div className={styles.smallDropdown} style={{right: '0', left: 'auto', width: '220px'}}>
+                <div className={styles.dropItem}>
+                    <img src={phoneIcon} className={styles.tinyIcon} /> 
+                    (877) 355-3585
+                </div>
+                <div className={styles.dropItem}>
+                    <img src={chatIcon} className={styles.tinyIcon} /> Chat
+                </div>
+                <div className={styles.dropItem}>
+                    <img src={emailIcon} className={styles.tinyIcon} /> Email
+                </div>
+                <div className={styles.dropItem}>
+                    <img src={helpIcon} className={styles.tinyIcon} /> Help Desk
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className={styles.actionIcon}>
+            <img src={heartIcon} alt="Heart" />
+          </div>
         </div>
       </div>
     </header>

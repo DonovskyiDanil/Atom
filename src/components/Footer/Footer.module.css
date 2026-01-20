@@ -4,7 +4,6 @@
   position: relative;
 }
 
-/* ФИКСИРОВАННЫЕ КНОПКИ ПО БОКАМ */
 .stickyLeft {
   position: fixed;
   left: 20px;
@@ -73,7 +72,7 @@
 .heading {
   font-size: 16px;
   font-weight: 700;
-  color: #1e266d;
+  color: #222;
   margin-bottom: 15px;
 }
 
@@ -98,12 +97,10 @@
   margin-top: 35px;
 }
 
-/* СМЕЩЕНИЕ LEGAL ВНИЗ (ЭТОТ ПАРАМЕТР МЕНЯЕМ) */
 .legalBlock {
   margin-top: 130px; 
 }
 
-/* НИЖНЯЯ ЛИНИЯ ПЕРЕД КОПИРАЙТОМ */
 .bottomLine {
   height: 1px;
   background-color: #f1f3f5;
@@ -125,7 +122,6 @@
 
 .dot { color: #cbd5e1; }
 
-/* РЕЙТИНГ TRUSTPILOT */
 .ratingSection {
   display: flex;
   align-items: center;

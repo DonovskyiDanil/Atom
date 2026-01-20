@@ -5,7 +5,7 @@
 }
 
 .mainIcon {
-  width: 60px; /* Укажи нужный размер */
+  width: 60px; 
   height: auto;
   display: block;
 }
@@ -35,7 +35,7 @@
 
 .title {
   font-size: 36px;
-  color: #1e266d;
+  color: #222;
   font-weight: 700;
 }
 
@@ -46,7 +46,6 @@
   gap: 10px;
 }
 
-/* КАРТОЧКА: Полностью статичная */
 .stepCard {
   background: #ffffff;
   padding: 40px 25px;
@@ -56,13 +55,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* Убраны тени и анимации */
 }
 
-/* УБРАН БЛОК .stepCard:hover */
-
 .stepBadge {
-  background-color: #377dff;
+  background-color: rgb(73, 66, 243);
   color: #ffffff;
   padding: 6px 16px;
   border-radius: 100px;
@@ -77,14 +73,11 @@
   line-height: 1.6;
 }
 
-/* СТРЕЛКА: Неподвижная */
 .connector {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* УБРАНА АНИМАЦИЯ moveArrow */
 
 @media (max-width: 992px) {
   .stepsGrid {

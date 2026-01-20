@@ -1,4 +1,4 @@
-import styles from "./MenuItem.module.css";
+import React from 'react';
 
 export default function MenuItem({ icon: Icon, title, text }) {
   return (

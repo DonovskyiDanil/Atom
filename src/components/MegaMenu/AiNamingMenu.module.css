@@ -1,8 +1,7 @@
 .wrapper {
   position: absolute !important;
   top: 0 !important;
-  /* Отрегулируйте left под кнопку AI Naming */
-  left: 350px !important; 
+  left: 500px !important; 
   width: 420px !important; 
   background: #ffffff !important;
   padding: 30px !important;
@@ -26,10 +25,9 @@
   gap: 20px !important; 
   align-items: center !important; 
   padding: 10px !important;
-  cursor: default !important;
+  cursor: pointer !important; 
 }
 
-/* Контейнер иконки (Белый квадрат с тенью) */
 .iconContainer { 
   width: 54px !important; 
   height: 54px !important; 
@@ -44,7 +42,6 @@
   cursor: pointer !important;
 }
 
-/* Поворот иконки при наведении на всю строку */
 .item:hover .iconContainer {
   transform: rotate(10deg) !important;
 }
@@ -61,7 +58,7 @@
 }
 
 .info h4 { 
-  color: #1e266d !important; 
+  color: #222 !important; 
   font-size: 17px !important; 
   font-weight: 700 !important; 
   margin: 0 !important; 
@@ -71,7 +68,7 @@
 }
 
 .info p { 
-  color: #77838f !important; 
+  color: #757575 !important; 
   font-size: 14px !important; 
   margin: 4px 0 0 0 !important; 
   line-height: 1.4 !important;
@@ -79,16 +76,15 @@
   cursor: pointer !important;
 }
 
-/* Стрелка chevron */
+
 .chevron { 
   display: inline-block !important;
   margin-left: 8px !important;
-  color: #1e266d !important; 
+  color: #222 !important; 
   font-weight: bold !important;
   transition: transform 0.2s ease !important;
 }
 
-/* Движение стрелки при наведении на строку */
 .item:hover .chevron {
   transform: translateX(5px) !important;
 }

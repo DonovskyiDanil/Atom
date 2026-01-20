@@ -15,13 +15,14 @@ const Hero = () => {
       
       <div className={styles.videoContainer}>
         <div className={styles.videoCard}>
-          <div className={styles.playButton}>
-            <div className={styles.playIcon}></div>
-          </div>
-          <div className={styles.videoUi}>
-            <div className={styles.progressBar}></div>
-            <div className={styles.time}>02:05</div>
-          </div>
+          <iframe
+            src="https://iframe.mediadelivery.net/embed/239474/327efcdd-b1a2-4891-b274-974787ae8362?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+            loading="lazy"
+            className={styles.iframeVideo}
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+            allowFullScreen={true}
+            title="How Does Atom Work?"
+          ></iframe>
         </div>
       </div>
     </section>

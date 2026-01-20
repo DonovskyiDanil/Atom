@@ -1,7 +1,7 @@
 .wrapper {
   position: absolute !important;
   top: 0 !important;
-  left: 450px !important; 
+  left: 600px !important; 
   width: 400px !important; 
   background: #ffffff !important;
   padding: 30px !important;
@@ -15,7 +15,7 @@
 }
 
 .title { 
-  color: #1e266d !important; 
+  color: #222 !important; 
   font-size: 16px !important; 
   font-weight: 800 !important; 
   margin-bottom: 25px !important; 
@@ -35,12 +35,9 @@
   align-items: center !important;
   padding: 10px !important;
   border-radius: 10px !important;
-  /* УБРАЛИ background-color из transition */
   transition: transform 0.2s ease !important;
-  cursor: default !important;
+  cursor: pointer !important; 
 }
-
-/* УДАЛИЛИ .toolCard:hover { background-color: ... } */
 
 .iconContainer {
   width: 54px !important;
@@ -56,7 +53,6 @@
   cursor: pointer !important;
 }
 
-/* Анимация иконки остается */
 .toolCard:hover .iconContainer {
   transform: rotate(10deg) !important;
 }
@@ -73,7 +69,7 @@
 }
 
 .text h4 { 
-  color: #1e266d !important; 
+  color: #222 !important; 
   font-size: 17px !important; 
   font-weight: 700 !important; 
   margin: 0 !important; 
@@ -83,7 +79,7 @@
 }
 
 .text p {
-  color: #77838f !important;
+  color: #757575 !important; 
   font-size: 14px !important;
   margin: 4px 0 0 0 !important;
   line-height: 1.4 !important;
@@ -94,12 +90,11 @@
 .chevron {
   display: inline-block !important;
   margin-left: 8px !important;
-  color: #1e266d !important;
+  color: #222 !important; 
   transition: transform 0.2s ease !important;
   font-weight: bold !important;
 }
 
-/* Анимация стрелки остается */
 .toolCard:hover .chevron {
   transform: translateX(5px) !important;
 }

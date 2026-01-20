@@ -4,21 +4,21 @@ export const domainsMenu = {
       id: 1,
       title: "Premium Domain Marketplace",
       desc: "Explore 300,000+ expert-curated, brandable domains to elevate your business.",
-      icon: "/how-it-works/premium-icon.svg",
+      icon: "/src/assets/how-it-works/premium-icon.svg",
       link: "/premium"
     },
     {
       id: 2,
       title: "Ultra Premium Marketplace",
       desc: "Discover the world's most coveted and powerful domains for top-tier brands.",
-      icon: "/how-it-works/ultra-icon.svg",
+      icon: "/src/assets/how-it-works/ultra-icon.svg",
       link: "/ultra"
     },
     {
       id: 3,
       title: "Sapphire Marketplace",
       desc: "Find one-word domains with modern extensions like .ai, .io, and .xyz.",
-      icon: "/how-it-works/sapphire-icon.svg",
+      icon: "/src/assets/how-it-works/sapphire-icon.svg",
       link: "/sapphire"
     }
   ],
@@ -45,7 +45,7 @@ export const domainsMenu = {
   promo: {
     title: "Get Started",
     desc: "Find your perfect domain today and buy instantly in the Atom.com marketplace.",
-    image: "/how-it-works/promo-laptop.jpg",
+    image: "/src/assets/how-it-works/promo-laptop.jpg",
     link: "/get-started"
   }
 };
